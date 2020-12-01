@@ -1,16 +1,3 @@
-# index = i
-# value = v (i.e., arr[i])
-# winning: reach the index with value 0
-# action: frontier
-#   forward_step(FS) = v
-#   backward_step(BS) = -v
-# rules: can not jump outside of the array
-#        (i.e., arr[FS] <= len(arr), arr[BS]>= 0)
-# planing: 
-#     1. frontier, if empty, return True
-#     2. visited, for route tracing->use list; 
-#                 for checking visited->use set. 
-#     3. pop from frontier and append visited. check visited each time.
 class Solution:
     def document_it(func):
         '''
